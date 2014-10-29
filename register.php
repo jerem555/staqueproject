@@ -156,6 +156,20 @@ if (!empty($_FILES)){
 
                     $stmt->execute();
                    
+            if ($token && $email){
+		//vérifier que les données dans l'url sont valides
+		$sql = "SELECT * FROM users
+				WHERE email = :email AND token = :token";
+		$stmt = $dbh->prepare($sql);
+		$stmt->bindValue(":email", $email);
+		$stmt->bindValue(":token", $token);
+		$stmt->execute();
+		$foundUser = $stmt->fetch();
+	
+
+		$_SESSION['user'] = $foundUser;
+					
+
 
    
 
@@ -217,14 +231,16 @@ if (!empty($_FILES)){
 			    echo "Message sent!";
 			}
 		
- header("Location: login.php");
+
+					header("Location: index.php");
+					
 
 
 
 	}
 }
 
-
+}
 
 ?>
 

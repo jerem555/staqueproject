@@ -121,4 +121,11 @@
 	<input type="submit" value="SAVE !" class="submit"/>
 </form>
 </div>
-<?php 	include("inc/bottom.php"); ?>
+<?php 
+
+if ($stmt->execute()){
+					//log the user automatically
+					$_SESSION['user'] = $foundUser;
+					header("Location: index.php");
+
+	include("inc/bottom.php"); ?>
