@@ -12,11 +12,10 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.jrumble.1.3.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
 
 	<link href="css/style2.css" type="text/css" rel="stylesheet" />
+	<link href="css/animate.css" type="text/css" rel="stylesheet" />
+
 
 
 </head>

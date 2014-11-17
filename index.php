@@ -81,7 +81,7 @@ else {
 			<main class="mainContentQuestions">
 
 
-        <h1> Dernières questions postées...</h1>
+        <h1 id="last"> Dernières questions postées...</h1>
 
 				<?php
 					foreach($questions as $question):
